@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Livewire\Admin\Dashboard;
+use App\Http\Livewire\Manager\Dashboard as Mdash;
 use App\Http\Livewire\Website\Home;
 use Illuminate\Support\Facades\Route;
 
@@ -19,5 +20,5 @@ use Illuminate\Support\Facades\Route;
 // });
 // for front site
 Route::get('/',Home::class);
-
-
+Route::get('/dash',Dashboard::class);
+Route::get('/man',Mdash::class);
